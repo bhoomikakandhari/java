@@ -5,7 +5,8 @@ public class online3 {
                 if(i==1 || j==1 || i==4 || j==5){
                     System.out.print("*");
 
-                }else{
+                }
+                else{
                     System.out.print(" ");
                 }
              
@@ -14,7 +15,7 @@ public class online3 {
             
         
                 System.out.println();
-            }
             
+        }   
     }
 }
