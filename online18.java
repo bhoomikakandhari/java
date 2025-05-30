@@ -5,10 +5,12 @@ public class online18 {
                 System.out.print(" ");
             }
             for(int k=1; k<=5; k++){
-                                if(k==1 ||k==5 || i==5 ||i==1){
+                                if(k==1 ||k==5 || i==5 ){
                     System.out.print("*");
                 }
-                
+                if(i==1){
+                    System.out.print("*");
+                }
                     else{
                     System.out.print(" ");
                 }
