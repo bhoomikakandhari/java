@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <div class="Dashboard">
+        <header class="header">
+            <h1>Dashboard</h1>
+        </header>
+        <div class="balance-income">
+            <div class="card balance">
+                <h2>Balance</h2>
+                <p>$2,234.65</p> 
+            <p class="percentage">+12%</p>
+        </div>
+        <div class="card income">
+            <h2>Income</h2>
+            <p>$5,670.90</p>
+            <p class="percentage">+5%</p>
+        </div>
+         </div>
+         <div class="spending">
+            <h2>Spending Over Time</h2>
+            <div class="spending amount">
+            <p>$3,436.25</p>
+            <p class="last-month">Last 12 Months +8%</p>
+            </div>
+            <canvas id="spending chart"></canvas>
+         </div>
+         <h2>Recent Transaction</h2>
+         <ul class="transactions">
+            <li> 🛒 SuperMarket: -$67.99</li>
+            <li>🍽️ Restaurant:  -$78.65</li>
+            <li> 🚗 Transportation: -$100.79</li>
+         </ul>
+    </div>
+     <br>
+    <br>
+    <br>
+    
+    <div class="container">
+        <h1>Add New Expences</h1>
+        <form id="expence">
+            <div class="form">
+                <label for="Amount">Amount: </label>
+                <input type="number"  id="amount " placeholder=" Enter Amount"/>
+            </div>
+            <div class="form">
+                <label for="Category">Category: </label>
+                <select id="category">
+                    <option value="">Select a Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Others">Others</option>
+                    
+                </select>
+
+            </div>
+            <div class="form">
+                <label for="Date">Date: </label>
+                <input type="date" id="Date"/>
+
+            </div>
+            <div class="form">
+                <label for="Description">Description :</label>
+                <textarea id="description" rows="4" placeholder="Enter a breif description...."></textarea>
+            </div>
+            <button type="submit">Add Expence</button>
+        </form>
+        <div id="confirmation message"  class="confirmation"></div>
+    </div>
+     <br>
+    <br>
+    <br>
+    <div class="box">
+        <h1>All Transactions</h1>
+        <input type="text" id="search" placeholder="🔍 Search Transactions"/>
+        <div class="myclass">
+            <select id="Category">
+                <option  value="">Category</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Dinning Out">Dinning Out</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Utility">Utility</option>
+                <option value="Transportation">Transportation</option>
+                
+            </select>
+            <select id="date" >
+                <option value="Date">Date</option>
+                <option value="Today">Today</option>
+                <option value="Yesterday">Yesterday</option>
+                <option value="This Week"> This Week</option>
+
+            </select>
+            
+        </div>
+        <div class="transactions">  
+            <div class="transaction">  
+                <div class="icon">🛒</div>  
+                <div class="details">  
+                    <div class="name">Groceries</div>  
+                    <div class="date">Today</div>  
+                </div>  
+                <div class="amount">$55.20</div>  
+            </div>  
+            <div class="transaction">  
+                <div class="icon">🍔</div>  
+                <div class="details">  
+                    <div class="name">Dining Out</div>  
+                    <div class="date">Yesterday</div>  
+                </div>  
+                <div class="amount">$32.50</div>  
+            </div>  
+            <div class="transaction">  
+                <div class="icon">🚍</div>  
+                <div class="details">  
+                    <div class="name">Transportation</div>  
+                    <div class="date">2 days ago</div>  
+                </div>  
+                <div class="amount">$12.75</div>  
+            </div>  
+            <div class="transaction">  
+                <div class="icon">🛍️</div>  
+                <div class="details">  
+                    <div class="name">Shopping</div>  
+                    <div class="date">3 days ago</div>  
+                </div>  
+                <div class="amount">$78.90</div>  
+            </div>  
+            <div class="transaction">  
+                <div class="icon">💡</div>  
+                <div class="details">  
+                    <div class="name">Utilities</div>  
+                    <div class="date">4 days ago</div>  
+                </div>  
+                <div class="amount">$110.45</div>  
+            </div>  
+            <div class="transaction">  
+                <div class="icon">🎬</div>  
+                <div class="details">  
+                    <div class="name">Entertainment</div>  
+                    <div class="date">5 days ago</div>  
+                </div>  
+                <div class="amount">$25.00</div>  
+            </div>  
+        </div>  
+    </div>
+    <br>
+    <br>
+    <br>  
+
+    <div class="bhooms">
+        <div class="header">
+            <h1>Reports</h1>
+            <div class="tabs">
+                <button class="tab active"> Overview</button>
+                <button class="tab">Categories</button>
+            </div>
+        </div>
+        <div class="cards">
+            <h2>Spending by Trend</h2>
+            <h3>$1,250.00</h3>  
+            <p>Last 6 Months +15%</p>  
+            <canvas id="trendChart"></canvas>  
+        </div>  
+        <div class="cards">  
+            <h2>Spending by Category</h2>  
+            <h3>$800.00</h3>  
+            <p>This Month -5%</p>  
+            <canvas id="spendingcategory"></canvas>
+        </div>  
+        <button class="generate-report">Generate Report</button>  
+        <button class="export">Export</button>
+        </div>
+    </div>
+    
+    <div class="bottom-nav">  
+        <div class="nav-item" onclick="navigate('dashboard')">Dashboard</div>  
+        <div class="nav-item" onclick="navigate('categories')">Categories</div>  
+        <div class="nav-item add-button" onclick="navigate('add')">+</div>  
+        <div class="nav-item" onclick="navigate('history')">History</div>  
+        <div class="nav-item" onclick="navigate('reports')">Reports</div>  
+    </div>  
+    
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

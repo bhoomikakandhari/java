@@ -1,0 +1,80 @@
+/* h1{
+    color: darkorange;
+    text-align: center;
+}
+
+p{
+    color: darkslategrey;
+     /* text-align: right; */
+     /* text-decoration:line-through ;
+     font-weight:lighter;
+} 
+
+button{
+    color: blueviolet;
+    background-color: antiquewhite;
+} */ 
+
+/* body{
+    background-color:#c10c54 ;
+} */
+
+/* h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+} 
+#outer{
+    font-size:  25px; ;
+}
+#inner{
+    font-size: 10px;
+} */
+ /* div{
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: coral;
+    /* border-radius:20px ; */
+    /* padding-left: 25px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    padding-top: 30px;
+ } */ 
+  /* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+  } */
+   /* *{
+    padding:0;
+    margin:0;
+    color: white;
+   }
+   div{
+    height: 60px;
+    background-color: black;
+    border-radius: 2px;
+    border-color: white;
+   }
+   button{
+    background-color: #f08804;
+   }
+   #logo{
+    color: #f08804;
+    font-size: 25px;
+   }
+   a{
+    margin-right: 200px;
+   } */
+div{
+    height: 100px;
+    width: 100px;
+    background-image: url("unsplash\ image.jpg");
+    background-size: cover;
+    color: white;
+}
