@@ -9,29 +9,32 @@
 <body>
 <!-- <button id="mode"> change mode</button>
    <script src="index.js"></script>  -->
-   <main>
-   <div class= "msg-container hide">
-    <p id="msg">Winner</p>
-    <button id="new-btn">New Game</button>
-
+   <h1>ROCK PAPER SCISSOR'S</h1>
+   <div class="choices">
+    <div class="choice"  id="rock">
+        <img src="./images/rock.png"/>
+    </div>
+    <div class="choice" id="paper">
+        <img src="./images/paper.png"/>
+    </div>
+    <div class="choice" id="scissors">
+        <img src="./images/scissors.png"/>
+    </div>
+   </div>
+   <div class="score-board">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>YOU</p>
+    </div>
+    <div class="score">
+        <p id="comp-score">0</p>
+        <p>COMP</p>
+    </div>
    </div>
 
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-        </div>
-    </div>
-    <button id="reset-btn">Reset Button</button>
-   </main>
+   <div class="msg-container">
+    <p id="msg">PLAY YOUR MOVE!!</p>
+   </div>
 </body>
 <script src="index.js"></script>
 
