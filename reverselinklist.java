@@ -1,16 +1,16 @@
-import java.lang.classfile.components.ClassPrinter.ListNode;
+// import java.lang.classfile.components.ClassPrinter.ListNode;
 
-public class reverselinklist {
-     public ListNode reverseList(ListNode head) {
-        ListNode previous= null;
-        ListNode current = head;
+// public class reverselinklist {
+//      public ListNode reverseList(ListNode head) {
+//         ListNode previous= null;
+//         ListNode current = head;
 
-        while(current!= null){
-            ListNode nextTemp= current.next;
-            current.next= previous;
-            previous= current;
-            current= nextTemp;
-        }
-        return previous;
-    }
-}
+//         while(current!= null){
+//             ListNode nextTemp= current.next;
+//             current.next= previous;
+//             previous= current;
+//             current= nextTemp;
+//         }
+//         return previous;
+//     }
+// }

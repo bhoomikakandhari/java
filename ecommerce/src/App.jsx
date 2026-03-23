@@ -10,17 +10,7 @@ import Contact from "./pages/Contact";
 import Search from "./pages/Search";
 import OrderConfirmation from "./pages/OrderConfirmation";
 
-//  import { BrowserRouter, Routes, Route } from "react-router-dom";
-//  import Navbar from "./components/Navbar" ;
-//  import Home from "./pages/Home" ;
-//  import Products from "./pages/Products" ;
-//  import ProductView from "./pages/ProductView" ;
-//  import Cart from "./pages/Cart " ;
-//  import Checkout from "./pages/Checkout" ;
-//  import About from "./pages/About" ;
-//  import Contact from "./pages/Contact" ;
-//  import Search from "./pages/Search" ;  
-//  import OrderConfirmation from "./pages/OrderConformation" ; 
+
  function App() {
    return (
      <BrowserRouter>
