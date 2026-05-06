@@ -36,10 +36,10 @@ const Products = () => {
   return (
     <div className="page">
       <h1>Products</h1>
-      {products.map((p) => (
+      {products?.map((p) => (
         <div key={p.id}>
           <h3>{p.name}</h3>
-          <p>₹{p.price}</p>
+          <p>{p.price}</p>
           <Link to={`/product/${p.id}`}>View</Link>
         </div>
       ))}
