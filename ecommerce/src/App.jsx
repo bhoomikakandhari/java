@@ -7,8 +7,8 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Search from "./pages/Search";
-import OrderConfirmation from "./pages/OrderConfirmation";
+ import Search from "./pages/Search";
+ import OrderConfirmation from "./pages/OrderConfirmation";
 
 
  function App() {
